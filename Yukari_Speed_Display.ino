@@ -104,6 +104,7 @@ void setup(void) {
   
   pinMode(2, INPUT);        // set digital pin 2 (first sensor output) as input, active low when a train is detected
   pinMode(3, INPUT);        // set digital pin 3 (second sensor output) as input, active low when a train is detected
+  delay(500);               // Delay required before initializing the display
   u8g2.begin();
 
   #ifdef DEBUG
